@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+body {
+	font-size: 100%;
+	font-family: arial, sans-serif;
+	padding-bottom:2%;
+}
+fieldset {
+background-color: #f1f1f1;
+border: none;
+border-radius: 2px;
+margin-bottom: 12px;
+overflow: hidden;
+padding: 0 .625em;
+}
+
+label {
+cursor: pointer;
+display: inline-block;	
+padding: 3px 6px;
+text-align: right;
+width: 150px;
+vertical-align: top;
+}
+
+hr{border:1px solid}
+
+.btn {
+background-color: #da820a;
+border: none;
+border-radius: 4px;
+box-shadow: 2px 2px 2px #333;
+color: #fff;
+margin: 12px 0 0 26px;
+padding: 8px;
+
+/*Vshadow ,Hshadow,  color  */
+text-shadow: 1px 1px 0px #777;
+margin-top:2%
+}
+
+span{
+
+color:red;
+font-size:small;
+  }
+
+
+</head>
+
+<body>
+
+<!-- Creating Form container which is also outer  layer  that holds all input type container-->
+<form method="post">
+
+<!-- fieldset inner container-->
+<fieldset>
+<!-- Header of the Form-->
+<h2 class="hdr-account">Account</h2>
+<!-- DIV third container from outside or first coantainer from inside-->
+<div class="fields">
+
+<!-- First input type-->
+<p class="row">
+<label >First Name:</label>
+<input type="text" id="first-name" name="first_name" class="field-large"  />
+<span id="Fname"></span >
+</p>
+
+<!-- Second inout type-->
+<p class="row">
+<label>Last Name:</label>
+<input type="text" id="last-name" name="last_name" class="field-large" autocomplete="on" />
+<span  id="LName"></span >
+</p>
+
+<!-- Second inout type-->
+<p class="row">
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="hasan@example.com" class="field-large" />  <span id="emailVa"></span >
+</p>
+
+<!-- Third inout type-->
+<p class="row">
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" />
+<span id="PassVa">  </span >
+</p>
+
+<!-- Fourth inout type-->
+<p class="row">
+<label for="password2">Re-enter Password:</label>
+<input type="password" id="password2" name="password2" />
+</p>
+
+ <p class="row">
+<label for="Date">Month</label>
+ <input type="time" name="bdaymonth">
+ </p>
+<!-- Horizantal Line -->
+
+<hr>
+
+<p class="row">
+<label for="UploadFile">Select a file:</label>
+ <input type="file" name="img">
+ </p>
+ <hr>
+
+ 
+   <p>
+   
+<label for="state">State:</label> 
+
+<select id="states" name="state">
+<option value="AL"></option>
+
+<option value="AL">Alabama</option>
+<option value="AK">Alaska</option>
+<option value="AK">California</option>
+<option value="AK">NY</option>
+<option value="AK">PA</option>
+<option value="AK">VA</option>
+
+</select>
+
+<span  id="selectVa"> </span >
+
+  <hr>
+   </p>
+
+   <fieldset id="checkArray"> Are you a U.S. citizen? <br>
+
+   <input  id="checkbox1"   type="checkbox"> Yes<br>
+  <input   id="checkbox2"   type="checkbox"> No<br>
+  <span  id="checkmesg"> </span >
+  </fieldset>
+
+
+ <hr>
+
+ 0<input type="range" id="" value="50">100
+ 
+ <input type="color" id="a" value="50">
+   <hr>
+   
+ <p class="row">
+ <textarea rows="4" cols="50">Hi there
+ </textarea>
+ </p>
+ 
+ <hr>
+ 
+ </div>
+</fieldset>
+  
+<input type="submit" onclick=" return myFunction()" value="Create Account" class="btn" />
+	</form>
+
+
+
+
+
+</body>
+</html>
